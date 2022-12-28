@@ -1,0 +1,33 @@
+<!-- 
+ File: app.component.html
+ Author: Nyiri István
+ Copyright: 2022, Nyiri István
+ Group: Szoft_II_N
+ Date: 2022-12-28
+ Github: https://github.com/nyiriistvan
+ Licenc: GNU GPL
+ -->
+<h1>Város Adatok</h1>
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Név</th>
+      <th>Megye</th>
+      <th>Terület (km²)</th>
+      <th>Népesség (fő)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of containtSettlementArray">
+      <td>{{i.name}}</td>
+      <td>{{i.county}}</td>
+      <td>{{i.area}}</td>
+      <td>{{i.population}}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div class="alert alert-success" role="alert">
+  Gubis Zsombor Dániel, Szoft_II_N, 2022.12.28.
+</div>
